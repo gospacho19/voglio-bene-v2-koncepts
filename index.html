@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#111836">
+<title>Voglio Bene — itāļu osterija Rīgā (dizaina priekšlikums)</title>
+<meta name="description" content="Dizaina priekšlikums: Voglio Bene, itāļu osterija Jura Alunāna ielā 2, Rīgā. Nav restorāna oficiālā lapa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f4f0e6; --paper2:#eae4d5; --card:#fbf9f3; --line:#d8d0be;
+  --ink:#171b2e; --ink2:#434960; --mute:#5f6273;
+  --blue:#22408f; --blue-d:#1a3275;
+  --night:#111836; --night2:#1a2349; --on:#f2eddf; --on2:#aab1cc; --line-n:#2d3763;
+  --terra:#a14a25; --open:#2c8a57;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"Fira Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --gut:16px; --head:56px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3,p,figure,blockquote,ul{margin:0;padding:0}
+ul{list-style:none}
+button,select,input,textarea{font:inherit;color:inherit}
+[data-lang][hidden]{display:none!important}
+a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.night a:focus-visible{outline-color:var(--on)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 var(--gut)}
+section[id]{scroll-margin-top:calc(var(--head) + 8px)}
+
+/* notice */
+.notice{background:var(--night);color:var(--on2);font-size:12.5px;line-height:1.35;text-align:center;padding:7px 12px}
+.notice b{color:var(--on);font-weight:600}
+
+/* header */
+.head{position:sticky;top:0;z-index:30;background:var(--paper);border-bottom:1px solid transparent;transition:border-color .2s}
+.head.stuck{border-color:var(--line)}
+.head .wrap{height:var(--head);display:flex;align-items:center;gap:18px}
+.brand{display:flex;align-items:center;color:var(--ink);text-decoration:none;margin-right:auto}
+.brand svg{width:40px;height:26px;flex:none}
+.brand b{margin-left:10px;font:600 17px/1 var(--serif);letter-spacing:-.005em;white-space:nowrap;opacity:0;transition:opacity .2s}
+.head.stuck .brand b{opacity:1}
+.nav{display:none}
+.langs{display:flex;gap:2px}
+.langs button{background:none;border:0;padding:13px 8px;font-size:13px;font-weight:600;letter-spacing:.08em;color:var(--mute);cursor:pointer}
+.langs button[aria-pressed="true"]{color:var(--ink)}
+.hbtn{display:none;align-items:center;height:38px;padding:0 15px;background:var(--blue);color:var(--card);font-size:14.5px;font-weight:500;text-decoration:none}
+.head.stuck .hbtn{display:inline-flex}
+
+/* type */
+h1,h2{font-family:var(--serif);font-weight:600;letter-spacing:-.012em;text-wrap:balance}
+h2{font-size:31px;line-height:1.12}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--terra);margin-bottom:14px}
+.lead{font-size:17.5px;color:var(--ink2)}
+.small{font-size:13.5px;line-height:1.45;color:var(--mute)}
+.small a,.lead a,.txt a{color:var(--blue);text-underline-offset:3px}
+figcaption{font-size:13px;line-height:1.4;color:var(--mute);margin-top:9px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:0 20px;font:500 16px/1 var(--sans);text-decoration:none;border:1.5px solid var(--blue);background:var(--blue);color:var(--card);cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--blue-d);border-color:var(--blue-d)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+.arrow{font-size:.9em;transform:translateY(-1px)}
+
+/* hero */
+.hero{padding:14px 0 0;text-align:center}
+.logo{display:block;width:min(62vw,236px);aspect-ratio:1400/500;margin:0 auto;background:var(--ink);-webkit-mask:url(img/logo.png) center/contain no-repeat;mask:url(img/logo.png) center/contain no-repeat}
+.hero h1{font-size:31px;line-height:1.1;margin:20px auto 10px;max-width:15em}
+.hero .lead{font-size:16px;line-height:1.45;max-width:23em;margin:0 auto}
+.cta{display:flex;gap:10px;margin:20px auto 0;max-width:430px}
+.cta .btn{flex:1 1 0;padding:0 10px}
+.status{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 14px;margin-top:14px;font-size:14px;color:var(--ink2)}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--open);margin-right:7px;transform:translateY(-1px)}
+.dot.shut{background:#b0492c}
+.star{color:var(--terra)}
+.status a{text-decoration:none}
+.arch{margin:22px auto 0;max-width:430px}
+.arch img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:999px 999px 0 0}
+.arch figcaption{text-align:center}
+
+/* sections */
+.sec{padding:72px 0}
+.sec.tint{background:var(--paper2);--mute:#585b6b}
+.txt p+p{margin-top:14px}
+
+/* kitchen */
+.kitchen .quote-h{font-family:var(--serif);font-style:italic;font-weight:500;font-size:35px;line-height:1.08;letter-spacing:-.012em;text-wrap:balance}
+.kitchen .by{margin:12px 0 22px}
+.dishes{display:grid;grid-auto-flow:column;grid-auto-columns:72%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:36px calc(var(--gut) * -1) 0;padding:0 var(--gut);scrollbar-width:none}
+.dishes::-webkit-scrollbar{display:none}
+.dishes figure{scroll-snap-align:start;scroll-margin-left:var(--gut)}
+.dishes img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.dish-n{margin-top:12px;font-family:var(--serif);font-weight:600;font-size:19px;line-height:1.2;color:var(--ink)}
+.dish-d{font-size:14.5px;line-height:1.4;color:var(--ink2);margin-top:4px}
+.dish-c{font-size:12.5px;color:var(--mute);margin-top:6px}
+.wide{margin-top:56px}
+.wide img{width:100%;aspect-ratio:1170/609;object-fit:cover}
+.wide figcaption{padding:0 var(--gut)}
+
+/* menu */
+.menu-top{display:flex;align-items:flex-end;justify-content:space-between;gap:16px}
+.menu-top svg{width:54px;height:35px;color:var(--ink);flex:none;margin-bottom:4px}
+.menu .lead{margin-top:14px;font-size:15.5px;line-height:1.5;max-width:36em}
+.tabs{display:flex;gap:22px;overflow-x:auto;margin:28px calc(var(--gut) * -1) 0;padding:0 var(--gut);scrollbar-width:none;border-bottom:1px solid var(--line)}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:10px 0 11px;font-size:15.5px;font-weight:500;color:var(--mute);cursor:pointer;white-space:nowrap}
+.tabs button[aria-selected="true"]{color:var(--ink);border-color:var(--blue)}
+.cats{margin-top:26px}
+.cat h3{font-family:var(--serif);font-weight:600;font-size:25px;line-height:1.15;margin-bottom:18px}
+.cat+.cat,.mcol+.mcol{margin-top:40px}
+.cat li{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:16px;align-items:baseline}
+.cat li+li{margin-top:17px}
+.cat .n{font-family:var(--serif);font-weight:600;font-size:18.5px;line-height:1.25}
+.cat .n i{font-weight:500}
+.cat .p{font-family:var(--serif);font-weight:600;font-size:17.5px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.cat .d{grid-column:1;font-size:14.5px;line-height:1.4;color:var(--ink2);margin-top:2px}
+.cat .src{font-size:14px;line-height:1.45;color:var(--ink2);margin-top:20px}
+.cat .src a{color:var(--blue);text-underline-offset:3px}
+.menu-foot{margin-top:34px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+
+/* aperitivo */
+.aper .time{font-family:var(--serif);font-weight:600;font-size:60px;line-height:1;letter-spacing:-.025em;color:var(--blue);font-variant-numeric:lining-nums;margin:2px 0 16px}
+.aper h2{margin-bottom:14px}
+.aper figure{margin-top:30px}
+.aper img{width:100%;aspect-ratio:1080/817;object-fit:cover}
+
+/* night band */
+.night{background:var(--night);color:var(--on)}
+.night .eyebrow{color:#e19a72}
+.night .lead,.night .txt{color:#c9cee0}
+.night figcaption{color:var(--on2)}
+.place{padding:0 0 72px}
+.place .vault img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.place .vault figcaption{padding:0 var(--gut)}
+.place .t1{padding-top:40px}
+.place h2{margin-bottom:14px}
+.place blockquote{margin-top:24px;padding-left:16px;border-left:2px solid #e19a72;font-family:var(--serif);font-style:italic;font-size:19px;line-height:1.4;color:var(--on)}
+.place blockquote cite{display:block;margin-top:8px;font:400 13px/1.4 var(--sans);color:var(--on2)}
+.shop{margin-top:64px}
+.shop img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.shop figcaption{padding:0 var(--gut)}
+.shop .t2{margin-top:30px}
+
+/* reviews */
+.rate{display:flex;align-items:flex-end;gap:16px}
+.rate .num{font-family:var(--serif);font-weight:600;font-size:92px;line-height:.82;letter-spacing:-.03em;color:var(--blue);font-variant-numeric:lining-nums}
+.rate .cap{font-size:14.5px;line-height:1.4;color:var(--ink2);padding-bottom:2px}
+.rate .cap b{display:block;color:var(--terra);font-size:17px;letter-spacing:.12em;font-weight:400}
+.quotes{margin-top:40px;display:grid;gap:34px}
+.quotes blockquote p{font-family:var(--serif);font-style:italic;font-size:21px;line-height:1.36;color:var(--ink)}
+.quotes cite{display:block;margin-top:10px;font:400 13.5px/1.4 var(--sans);color:var(--mute)}
+
+/* booking */
+.book .lead{margin-top:14px;max-width:32em}
+.form{margin-top:28px;display:grid;gap:16px}
+.row3{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr) minmax(0,.8fr);gap:10px}
+label{display:block;font-size:13px;font-weight:500;color:var(--ink2);margin-bottom:6px}
+select,input[type=text]{display:block;width:100%;min-width:0;height:52px;padding:0 12px;border:1px solid #c9c0ab;border-radius:0;background:var(--card);font-size:16px;-webkit-appearance:none;appearance:none}
+select{padding-right:28px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23171b2e' stroke-width='1.4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 11px center}
+select:focus,input:focus{outline:2px solid var(--blue);outline-offset:-1px}
+.msg{background:var(--card);border-left:3px solid var(--blue);padding:16px 16px 18px}
+.msg .small{margin-bottom:6px}
+.msg p#msg{font-size:16.5px;line-height:1.5}
+.send{display:grid;gap:10px}
+.copy{background:none;border:0;padding:0;color:var(--blue);text-decoration:underline;text-underline-offset:3px;font-size:13.5px;cursor:pointer}
+
+/* visit */
+.visit figure img{width:100%;aspect-ratio:1000/1123;object-fit:cover}
+.visit .info{margin-top:34px}
+.visit h2{margin-bottom:12px}
+.hours{margin:26px 0 0;border-top:1px solid var(--line)}
+.hours div{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid var(--line);font-size:16.5px}
+.hours div.today{font-weight:600}
+.hours span:last-child{font-variant-numeric:tabular-nums;white-space:nowrap}
+.visit .status{justify-content:flex-start;margin-top:14px}
+.links{margin-top:26px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
+.links .btn{padding:0 10px}
+.more{margin-top:18px;display:flex;gap:26px;font-size:15.5px}
+.more a{color:var(--blue);text-underline-offset:3px}
+
+/* footer */
+.foot{padding:56px 0 44px;font-size:13.5px;line-height:1.55;color:var(--on2)}
+.foot .logo{background:var(--on);margin:0;width:200px}
+.foot p{margin-top:16px;max-width:60em}
+.foot .signline{margin-top:14px;font-size:11.5px;font-weight:500;letter-spacing:.17em;text-transform:uppercase;color:var(--on2)}
+.foot .signline+p{margin-top:30px;color:var(--on)}
+.foot svg{width:44px;height:28px;color:var(--on);margin-top:34px}
+
+@media (max-width:860px){
+  .cats.js .cat:not(.on){display:none}
+  .cats.js .cat h3{display:none}
+  .cats.js .cat+.cat,.cats.js .mcol+.mcol{margin-top:0}
+}
+@media (min-width:600px) and (max-width:860px){
+  .dishes{grid-auto-flow:row;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;margin:36px 0 0;padding:0;gap:14px}
+  .aper figure,.shop figure,.visit figure{max-width:560px}
+  .shop figure{margin-left:var(--gut)}
+  .shop figcaption{padding:0}
+  .place .vault img{aspect-ratio:16/11}
+  h2{font-size:38px;line-height:1.1}
+  .hero h1{font-size:40px;line-height:1.06}
+  .kitchen .quote-h{font-size:44px}
+}
+@media (max-width:374px){
+  .brand b{display:none}
+  .head .wrap{gap:10px}
+  .hero h1{font-size:28px}
+  .cta .btn{font-size:15px}
+  .row3{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .row3 > :first-child{grid-column:1/-1}
+}
+@media (min-width:861px){
+  :root{--gut:40px;--head:64px}
+  body{font-size:18px}
+  .notice{font-size:13px}
+  .brand svg{width:46px;height:30px}
+  .brand b{font-size:19px;margin-left:12px}
+  .nav{display:flex;gap:30px;margin-right:22px}
+  .nav a{font-size:15px;color:var(--ink2);text-decoration:none}
+  .nav a:hover{color:var(--ink)}
+  .hbtn{display:inline-flex;height:40px;padding:0 18px}
+  h2{font-size:46px;line-height:1.08}
+  .eyebrow{font-size:12.5px;margin-bottom:18px}
+  .sec{padding:120px 0}
+  figcaption{font-size:13.5px}
+
+  .hero{padding:20px 0 0;text-align:left}
+  .hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,clamp(320px,34vw,440px));column-gap:clamp(40px,6vw,90px);align-items:center}
+  .hero .logo{width:clamp(240px,22vw,300px);margin:0 0 0 -7px}
+  .hero h1{font-size:clamp(40px,4.4vw,60px);line-height:1.03;margin:26px 0 16px;max-width:10.5em}
+  .hero .lead{font-size:19px;margin:0;max-width:25em}
+  .cta{margin:28px 0 0;max-width:none;justify-content:flex-start}
+  .cta .btn{flex:none;padding:0 28px;min-height:56px;font-size:17px}
+  .status{justify-content:flex-start;margin-top:18px;font-size:15px}
+  .arch{margin:0;max-width:none}
+  /* the photo never grows taller than the screen allows, so the buttons stay above the fold on short laptops */
+  .arch img{width:min(100%,max(270px,calc((100vh - 190px) * .75)));margin:0 auto}
+  .arch figcaption{text-align:center}
+
+  .kitchen .top{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);column-gap:90px;align-items:start}
+  .kitchen .quote-h{font-size:58px;line-height:1.02}
+  .kitchen .by{margin:16px 0 0}
+  .kitchen .txt{padding-top:34px}
+  .dishes{grid-auto-flow:row;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;margin:64px 0 0;padding:0;gap:32px}
+  .dish-n{font-size:22px;margin-top:16px}
+  .dish-d{font-size:15.5px}
+  .wide{margin-top:90px;padding:0 var(--gut);max-width:1160px;margin-left:auto;margin-right:auto}
+  .wide img{aspect-ratio:1170/520}
+  .wide figcaption{padding:0}
+
+  .menu-top svg{width:76px;height:49px}
+  .menu .lead{font-size:16.5px}
+  .tabs{display:none}
+  .cats{margin-top:56px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:auto 1fr;column-gap:64px;align-items:start}
+  .mcol:nth-child(1){grid-column:1;grid-row:1}
+  .mcol:nth-child(2){grid-column:2;grid-row:1/3}
+  .mcol:nth-child(3){grid-column:3;grid-row:1/3}
+  .cat+.cat{margin-top:48px}
+  .mcol+.mcol{margin-top:0}
+  .cat .src{font-size:14.5px}
+  .menu-foot{grid-column:1;grid-row:2;margin-top:44px}
+  .cat h3{font-size:28px;margin-bottom:22px}
+
+  .aper .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);column-gap:90px;align-items:center}
+  .aper .time{font-size:104px;margin:0 0 24px}
+  .aper figure{margin:0}
+
+  .place{padding:120px 0}
+  .place .duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:90px;align-items:center;max-width:1160px;margin:0 auto;padding:0 var(--gut)}
+  .place .duo .wrap{padding:0}
+  .place .vault figcaption{padding:0}
+  .place .t1{padding-top:0}
+  .place blockquote{font-size:22px;margin-top:30px;padding-left:20px}
+  .shop{margin-top:120px}
+  .shop .duo .t2{order:-1}
+  .shop .t2{margin-top:0}
+  .shop figcaption{padding:0}
+
+  .revs .wrap{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);column-gap:90px;align-items:start}
+  .rate{flex-direction:column;align-items:flex-start;gap:22px;position:sticky;top:110px}
+  .rate .num{font-size:150px}
+  .rate .cap{font-size:16px}
+  .quotes{margin-top:0;gap:44px}
+  .quotes blockquote p{font-size:27px;line-height:1.3}
+  .quotes cite{font-size:14.5px}
+
+  .book .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);column-gap:90px;align-items:start}
+  .form{margin-top:0}
+  .send{grid-template-columns:1fr 1fr}
+  .send .copy{grid-column:1/-1;justify-self:start}
+  .foot .signline{font-size:12.5px}
+
+  .visit .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:90px;align-items:center}
+  .visit .info{margin-top:0}
+  .hours div{font-size:18px;padding:15px 0}
+  .foot{padding:80px 0 60px;font-size:14px}
+}
+/* a laptop cannot send a text: there, copying the message is the main action */
+@media (min-width:861px) and (hover:hover) and (pointer:fine){
+  #sms{display:none}
+  .send .copy{grid-column:auto;justify-self:stretch;order:-1;display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 20px;font:500 16px/1 var(--sans);text-decoration:none;border:1.5px solid var(--blue);background:var(--blue);color:var(--card);white-space:nowrap}
+  .send .copy:hover{background:var(--blue-d);border-color:var(--blue-d)}
+}
+</style>
+</head>
+<body>
+<div class="notice"><b>Nikita:</b> <span data-lang="lv">Dizaina priekšlikums, nav Voglio Bene oficiālā lapa.</span><span data-lang="en" hidden>A design proposal, not the official Voglio Bene website.</span></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="eye" viewBox="168 152 692 436">
+    <g fill="none" stroke="currentColor" stroke-width="29" stroke-linejoin="miter" stroke-miterlimit="6">
+      <path d="M228 513 C 300 436 392 302 600 277 C 690 268 765 312 832 366 C 778 468 682 556 502 560 C 384 562 292 541 228 513 Z"/>
+      <path d="M352 392 C 372 500 640 520 654 298"/>
+    </g>
+    <g fill="currentColor">
+      <circle cx="508" cy="334" r="83"/>
+      <path d="M184 364 L302 402 L246 494 Z"/>
+      <path d="M316 248 L414 312 L348 374 Z"/>
+      <path d="M462 170 L558 264 L446 302 Z"/>
+    </g>
+  </symbol>
+</svg>
+
+<header class="head" id="head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Voglio Bene"><svg aria-hidden="true"><use href="#eye"/></svg><b>Voglio Bene</b></a>
+    <nav class="nav" aria-label="Sadaļas">
+      <a href="#karte"><span data-lang="lv">Ēdienkarte</span><span data-lang="en" hidden>Menu</span></a>
+      <a href="#aperitivo">Aperitivo</a>
+      <a href="#vieta"><span data-lang="lv">Zāle un veikaliņš</span><span data-lang="en" hidden>The room &amp; shop</span></a>
+      <a href="#atrast"><span data-lang="lv">Kā atrast</span><span data-lang="en" hidden>Find us</span></a>
+    </nav>
+    <div class="langs" role="group" aria-label="Valoda / Language">
+      <button type="button" data-setlang="lv" aria-pressed="true">LV</button>
+      <button type="button" data-setlang="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="hbtn" href="#rezervet"><span data-lang="lv">Rezervēt</span><span data-lang="en" hidden>Book</span></a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-t">
+      <span class="logo" role="img" aria-label="Voglio Bene Osteria"></span>
+      <h1><span data-lang="lv">Zem ķieģeļu velvēm Rīgas klusajā centrā</span><span data-lang="en" hidden>Under brick vaults in Riga’s quiet centre</span></h1>
+      <p class="lead"><span data-lang="lv">Itāļu virtuve: pica no malkas krāsns, katru dienu pašu gatavota pasta un aperitivo no pieciem.</span><span data-lang="en" hidden>Italian cooking: wood-fired pizza, pasta made here every day, and aperitivo from five.</span></p>
+      <div class="cta" id="cta">
+        <a class="btn" href="#rezervet"><span data-lang="lv">Rezervēt galdiņu</span><span data-lang="en" hidden>Book a table</span></a>
+        <a class="btn ghost" href="#karte"><span data-lang="lv">Ēdienkarte</span><span data-lang="en" hidden>Menu</span></a>
+      </div>
+      <p class="status"><span><i class="dot" data-dot></i><span data-status>Katru dienu no 12:00</span></span><a href="#atsauksmes"><span class="star">★</span> <span data-num>4,9</span> <span data-lang="lv">Google kartēs</span><span data-lang="en" hidden>on Google Maps</span></a></p>
+    </div>
+    <figure class="arch">
+      <img src="img/hero.jpg" width="1080" height="1439" alt="Pica Napoli ar anšoviem un liellopa karpačo uz apgleznotiem šķīvjiem" data-alt-en="Pizza Napoli with anchovies and beef carpaccio on painted plates" fetchpriority="high">
+      <figcaption><span data-lang="lv">Pica Napoli un liellopa karpačo terasē. Foto: Alexander K</span><span data-lang="en" hidden>Pizza Napoli and beef carpaccio on the terrace. Photo: Alexander K</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sec kitchen" id="virtuve">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <p class="eyebrow"><span data-lang="lv">Virtuve</span><span data-lang="en" hidden>The kitchen</span></p>
+        <p class="quote-h"><span data-lang="lv">„Mūsu ēdiens ir mīlestība”</span><span data-lang="en" hidden>“Our food is love”</span></p>
+        <p class="small by"><span data-lang="lv">Voglio Bene stāsts portālā santa.lv, 2026. gada aprīlis</span><span data-lang="en" hidden>Voglio Bene’s story on santa.lv, April 2026 (translated)</span></p>
+      </div>
+      <div class="txt lead">
+        <p><span data-lang="lv">Pastu šeit gatavo paši, katru dienu. Picas cep malkas krāsnī. „Mums ir arī sava desertu meistare,” piebilst īpašnieks Rubens Panasjans.</span><span data-lang="en" hidden>The pasta is made here, every day. The pizzas are baked in a wood-fired oven. “We also have our own pastry chef,” adds the owner, Rubens Panasjans (translated).</span></p>
+        <p><span data-lang="lv">Ēdienu atnes uz šķīvjiem ar zilu rakstu — tos redzēsiet gandrīz katrā viesu fotogrāfijā.</span><span data-lang="en" hidden>The food arrives on plates with a blue pattern — you will spot them in nearly every guest photo.</span></p>
+      </div>
+    </div>
+
+    <div class="dishes">
+      <figure>
+        <img src="img/prawns.jpg" width="760" height="949" loading="lazy" alt="Garneles ķiploku mērcē ar fokaču uz šķīvja ar zilu rakstu" data-alt-en="Prawns in garlic sauce with focaccia on a plate with a blue pattern">
+        <figcaption>
+          <p class="dish-n"><span data-lang="lv">Garneles</span><span data-lang="en" hidden>Prawns</span></p>
+          <p class="dish-d"><span data-lang="lv">Ķiploku mērce, fokača<br>13,50 €</span><span data-lang="en" hidden>Garlic sauce, focaccia<br>€13.50</span></p>
+          <p class="dish-c"><span data-lang="lv">Foto: Jelena Sencenkova</span><span data-lang="en" hidden>Photo: Jelena Sencenkova</span></p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="img/tiramisu.jpg" width="760" height="950" loading="lazy" alt="Tiramisu vara trauciņā uz apgleznota šķīvja" data-alt-en="Tiramisu in a copper dish on a painted plate">
+        <figcaption>
+          <p class="dish-n">Tiramisu</p>
+          <p class="dish-d"><span data-lang="lv">Vara trauciņā, pārkaisīts ar kakao</span><span data-lang="en" hidden>In a copper dish, dusted with cocoa</span></p>
+          <p class="dish-c"><span data-lang="lv">Foto: Nette Mat</span><span data-lang="en" hidden>Photo: Nette Mat</span></p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="img/pastry.jpg" width="760" height="950" loading="lazy" alt="Kārtainās mīklas stobriņi ar krēmu un pistācijām" data-alt-en="Puff-pastry rolls with cream and pistachios">
+        <figcaption>
+          <p class="dish-n"><span data-lang="lv">Kārtainās mīklas stobriņi</span><span data-lang="en" hidden>Puff-pastry rolls</span></p>
+          <p class="dish-d"><span data-lang="lv">Krēms, pistācijas</span><span data-lang="en" hidden>Cream, pistachios</span></p>
+          <p class="dish-c"><span data-lang="lv">Foto: Nette Mat</span><span data-lang="en" hidden>Photo: Nette Mat</span></p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <figure class="wide">
+    <img src="img/branzino.jpg" srcset="img/branzino.jpg 1170w, img/branzino-l.jpg 1800w" sizes="(min-width:861px) min(1080px, calc(100vw - 80px)), 100vw" width="1170" height="609" loading="lazy" alt="Vesels branzino ar tomātiem, kaperiem un olīvām uz gara šķīvja ar zilu rakstu" data-alt-en="A whole branzino with tomatoes, capers and olives on a long plate with a blue pattern">
+    <figcaption><span data-lang="lv">Branzino sicīliešu gaumē, 24,50 €. Foto: Elena Misharina</span><span data-lang="en" hidden>Branzino, Sicilian style, €24.50. Photo: Elena Misharina</span></figcaption>
+  </figure>
+</section>
+
+<section class="sec tint menu" id="karte">
+  <div class="wrap">
+    <div class="menu-top">
+      <h2><span data-lang="lv">Ēdienkarte</span><span data-lang="en" hidden>Menu</span></h2>
+      <svg aria-hidden="true"><use href="#eye"/></svg>
+    </div>
+    <p class="lead"><span data-lang="lv">Uzkodas, salāti, zupas un pamatēdieni no restorāna drukātās kartes. Cenas norādītas eiro, kādas tās bija 2026. gada vasaras sākumā, un var būt mainījušās.</span><span data-lang="en" hidden>Starters, salads, soups and mains from the restaurant’s printed menu. Prices are in euro as they stood in early summer 2026 and may have changed since.</span></p>
+
+    <div class="tabs" role="tablist" id="tabs">
+      <button type="button" role="tab" data-tab="antipasti" aria-selected="true">Antipasti</button>
+      <button type="button" role="tab" data-tab="pica" aria-selected="false"><span data-lang="lv">Pica un pasta</span><span data-lang="en" hidden>Pizza &amp; pasta</span></button>
+      <button type="button" role="tab" data-tab="salati" aria-selected="false"><span data-lang="lv">Salāti</span><span data-lang="en" hidden>Salads</span></button>
+      <button type="button" role="tab" data-tab="karstas" aria-selected="false"><span data-lang="lv">Karstās uzkodas</span><span data-lang="en" hidden>Hot starters</span></button>
+      <button type="button" role="tab" data-tab="zupas" aria-selected="false"><span data-lang="lv">Zupas</span><span data-lang="en" hidden>Soups</span></button>
+      <button type="button" role="tab" data-tab="pamat" aria-selected="false"><span data-lang="lv">Pamatēdieni</span><span data-lang="en" hidden>Mains</span></button>
+    </div>
+
+    <div class="cats" id="cats">
+      <div class="mcol">
+        <div class="cat on" data-cat="antipasti">
+          <h3>Antipasti</h3>
+          <ul>
+            <li><span class="n"><span data-lang="lv">Olīvu asorti</span><span data-lang="en" hidden>Mixed olives</span></span><span class="p">5 €</span></li>
+            <li><span class="n"><span data-lang="lv">Sardīnes Sicīliešu gaumē</span><span data-lang="en" hidden>Sardines, Sicilian style</span></span><span class="p">6,50 €</span><span class="d"><span data-lang="lv">Melnā maize ar rozīnēm, sviests ar papriku, redīsi</span><span data-lang="en" hidden>Dark bread with raisins, paprika butter, radishes</span></span></li>
+            <li><span class="n"><span data-lang="lv">Tunča crudo</span><span data-lang="en" hidden>Tuna crudo</span></span><span class="p">13 €</span><span class="d"><span data-lang="lv">Gurķi, tomāti, kaperi, čili</span><span data-lang="en" hidden>Cucumber, tomatoes, capers, chilli</span></span></li>
+            <li><span class="n"><span data-lang="lv">Cepti pipari</span><span data-lang="en" hidden>Roasted peppers</span></span><span class="p">13,50 €</span><span class="d"><span data-lang="lv">Stracciatella, anšovi</span><span data-lang="en" hidden>Stracciatella, anchovies</span></span></li>
+            <li><span class="n"><span data-lang="lv">Liellopa karpačo</span><span data-lang="en" hidden>Beef carpaccio</span></span><span class="p">15 €</span><span class="d"><span data-lang="lv">Pecorino, ciedru rieksti</span><span data-lang="en" hidden>Pecorino, pine nuts</span></span></li>
+            <li><span class="n">Vitello Tonnato</span><span class="p">13,50 €</span><span class="d"><span data-lang="lv">Teļa gaļa, tunča mērce, kaperi</span><span data-lang="en" hidden>Veal, tuna sauce, capers</span></span></li>
+            <li><span class="n"><span data-lang="lv">Vistas aknu paté</span><span data-lang="en" hidden>Chicken liver pâté</span></span><span class="p">11,50 €</span><span class="d"><span data-lang="lv">Ķiršu mostarda, pekanrieksti</span><span data-lang="en" hidden>Cherry mostarda, pecans</span></span></li>
+            <li><span class="n"><span data-lang="lv">Itāļu izlase</span><span data-lang="en" hidden>Italian selection</span></span><span class="p">15 €</span><span class="d"><span data-lang="lv">Žāvēti un kūpināti gaļas izstrādājumi, marinēti dārzeņi, ķiršu mostarda, plāceņi</span><span data-lang="en" hidden>Cured and smoked meats, pickled vegetables, cherry mostarda, flatbreads</span></span></li>
+            <li><span class="n"><span data-lang="lv">Sieru izlase</span><span data-lang="en" hidden>Cheese selection</span></span><span class="p">13 €</span><span class="d"><span data-lang="lv">Zaļo tomātu džems, trifeļu medus, krekeri ar auzu graudiem un ķirbju sēklām</span><span data-lang="en" hidden>Green tomato jam, truffle honey, crackers with oats and pumpkin seeds</span></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mcol">
+        <div class="cat" data-cat="salati">
+          <h3><span data-lang="lv">Salāti</span><span data-lang="en" hidden>Salads</span></h3>
+          <ul>
+            <li><span class="n"><span data-lang="lv">Zaļie salāti</span><span data-lang="en" hidden>Green salad</span></span><span class="p">11,50 €</span><span class="d"><span data-lang="lv">Stracciatella, greipfrūts</span><span data-lang="en" hidden>Stracciatella, grapefruit</span></span></li>
+            <li><span class="n"><span data-lang="lv">Ziedkāpostu karpačo</span><span data-lang="en" hidden>Cauliflower carpaccio</span></span><span class="p">11,50 €</span><span class="d"><span data-lang="lv">Pecorino, trifeles</span><span data-lang="en" hidden>Pecorino, truffle</span></span></li>
+            <li><span class="n"><span data-lang="lv">Tonno salāti</span><span data-lang="en" hidden>Tonno salad</span></span><span class="p">12,50 €</span><span class="d"><span data-lang="lv">Tuncis, cepti pipari, kaperi, olīvas</span><span data-lang="en" hidden>Tuna, roasted peppers, capers, olives</span></span></li>
+            <li><span class="n">Burrata</span><span class="p">14,50 €</span><span class="d"><span data-lang="lv">Zemenes, tomāti, pesto, rukola</span><span data-lang="en" hidden>Strawberries, tomatoes, pesto, rocket</span></span></li>
+          </ul>
+        </div>
+        <div class="cat" data-cat="karstas">
+          <h3><span data-lang="lv">Karstās uzkodas</span><span data-lang="en" hidden>Hot starters</span></h3>
+          <ul>
+            <li><span class="n"><span data-lang="lv">Cepta Ricotta</span><span data-lang="en" hidden>Baked ricotta</span></span><span class="p">9,50 €</span><span class="d"><span data-lang="lv">Baltās sēnes, fokača</span><span data-lang="en" hidden>Porcini mushrooms, focaccia</span></span></li>
+            <li><span class="n"><span data-lang="lv">Mīdijas <i>1 kg / 2 personām</i></span><span data-lang="en" hidden>Mussels <i>1 kg / for two</i></span></span><span class="p">24,50 €</span><span class="d"><span data-lang="lv">Baltvīns, Nduja mērce, fokača</span><span data-lang="en" hidden>White wine, ’nduja sauce, focaccia</span></span></li>
+            <li><span class="n"><span data-lang="lv">Garneles</span><span data-lang="en" hidden>Prawns</span></span><span class="p">13,50 €</span><span class="d"><span data-lang="lv">Ķiploku mērce, fokača</span><span data-lang="en" hidden>Garlic sauce, focaccia</span></span></li>
+            <li><span class="n"><span data-lang="lv">Kalmāri</span><span data-lang="en" hidden>Squid</span></span><span class="p">13 €</span><span class="d"><span data-lang="lv">Olīvas, Romesko mērce</span><span data-lang="en" hidden>Olives, romesco sauce</span></span></li>
+          </ul>
+        </div>
+        <div class="cat" data-cat="zupas">
+          <h3><span data-lang="lv">Zupas</span><span data-lang="en" hidden>Soups</span></h3>
+          <ul>
+            <li><span class="n"><span data-lang="lv">Minestrone Dženovas gaumē</span><span data-lang="en" hidden>Minestrone, Genoa style</span></span><span class="p">8 €</span></li>
+            <li><span class="n"><span data-lang="lv">Tortellīni ar pīli buljonā</span><span data-lang="en" hidden>Duck tortellini in broth</span></span><span class="p">9 €</span></li>
+            <li><span class="n"><span data-lang="lv">Zivju zupa Kačukko</span><span data-lang="en" hidden>Cacciucco fish soup</span></span><span class="p">15,50 €</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mcol">
+        <div class="cat" data-cat="pica">
+          <h3><span data-lang="lv">Pica un pasta</span><span data-lang="en" hidden>Pizza &amp; pasta</span></h3>
+          <ul>
+            <li><span class="n"><span data-lang="lv">Pica Margherita</span><span data-lang="en" hidden>Pizza Margherita</span></span><span class="p">9 €</span></li>
+            <li><span class="n"><span data-lang="lv">Pica ar bumbieriem, trifeļu medu un četriem sieriem</span><span data-lang="en" hidden>Pizza with pears, truffle honey and four cheeses</span></span></li>
+            <li><span class="n"><span data-lang="lv">Ņoki krēmīgā sēņu mērcē</span><span data-lang="en" hidden>Gnocchi in a creamy mushroom sauce</span></span></li>
+            <li><span class="n"><span data-lang="lv">Karbonāra bez saldā krējuma</span><span data-lang="en" hidden>Carbonara, made without cream</span></span></li>
+            <li><span class="n"><span data-lang="lv">Pasta ar garnelēm, kalmāriem un mīdijām</span><span data-lang="en" hidden>Pasta with prawns, squid and mussels</span></span></li>
+          </ul>
+          <p class="src"><span data-lang="lv">Visas picas atradīsiet <a href="https://wolt.com/en/lva/riga/restaurant/voglio-bene" target="_blank" rel="noopener">Wolt ēdienkartē ↗</a>. Par pārējām pastām un cenām jautājiet restorānā.</span><span data-lang="en" hidden>All the pizzas are on the <a href="https://wolt.com/en/lva/riga/restaurant/voglio-bene" target="_blank" rel="noopener">Wolt menu ↗</a>. Ask at the restaurant about the other pastas and prices.</span></p>
+        </div>
+        <div class="cat" data-cat="pamat">
+          <h3><span data-lang="lv">Pamatēdieni</span><span data-lang="en" hidden>Mains</span></h3>
+          <ul>
+            <li><span class="n">Pollo alla Diavola</span><span class="p">21,50 €</span><span class="d"><span data-lang="lv">Cālis, tomātu salāti</span><span data-lang="en" hidden>Spring chicken, tomato salad</span></span></li>
+            <li><span class="n"><span data-lang="lv">Teļa gaļa Milanese</span><span data-lang="en" hidden>Veal Milanese</span></span><span class="p">29,50 €</span><span class="d"><span data-lang="lv">Romiešu lapas, Pecorino siers</span><span data-lang="en" hidden>Romaine leaves, pecorino</span></span></li>
+            <li><span class="n"><span data-lang="lv">Teļa aknas Venēcijas gaumē</span><span data-lang="en" hidden>Calf’s liver, Venetian style</span></span><span class="p">15,50 €</span><span class="d"><span data-lang="lv">Orzo pasta, karamelizēti sīpoli</span><span data-lang="en" hidden>Orzo, caramelised onions</span></span></li>
+            <li><span class="n"><span data-lang="lv">Jēra mēle</span><span data-lang="en" hidden>Lamb’s tongue</span></span><span class="p">18,50 €</span><span class="d"><span data-lang="lv">Mini romiešu salāti, Romesko mērce</span><span data-lang="en" hidden>Baby romaine, romesco sauce</span></span></li>
+            <li><span class="n"><span data-lang="lv">Branzino Sicīliešu gaumē</span><span data-lang="en" hidden>Branzino, Sicilian style</span></span><span class="p">24,50 €</span><span class="d"><span data-lang="lv">Apcepti kartupeļi, Acqua Pazza mērce</span><span data-lang="en" hidden>Sautéed potatoes, acqua pazza sauce</span></span></li>
+            <li><span class="n"><span data-lang="lv">Tuncis toro</span><span data-lang="en" hidden>Tuna toro</span></span><span class="p">23,50 €</span><span class="d"><span data-lang="lv">Baltās pupiņas, plūmju gremolata</span><span data-lang="en" hidden>White beans, plum gremolata</span></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-foot">
+        <p class="small"><span data-lang="lv">Par desertiem un vīniem jautājiet uz vietas. Uz mājām Voglio Bene piegādā Wolt.</span><span data-lang="en" hidden>Ask at the restaurant about desserts and wines. For delivery, Voglio Bene is on Wolt.</span></p>
+        <a class="btn ghost" href="https://wolt.com/en/lva/riga/restaurant/voglio-bene" target="_blank" rel="noopener"><span data-lang="lv">Pasūtīt Wolt lietotnē</span><span data-lang="en" hidden>Order on Wolt</span> <span class="arrow">↗</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec aper" id="aperitivo">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Bar Aperitivo</p>
+      <p class="time">17–19</p>
+      <h2><span data-lang="lv">Aperitivo stundas</span><span data-lang="en" hidden>Aperitivo hours</span></h2>
+      <p class="lead"><span data-lang="lv">No pieciem līdz septiņiem uzkodas pie dzēriena ir bez maksas — maksājat tikai par dzērienu.</span><span data-lang="en" hidden>From five to seven the snacks that come with your drink are on the house — you pay for the drink only.</span></p>
+    </div>
+    <figure>
+      <img src="img/aperitivo.jpg" width="1080" height="817" loading="lazy" alt="Galds terasē saulē: pica, olīvas, grilēta maize, salāti, vīna glāze un oranži dzērieni" data-alt-en="A table on the terrace in the sun: pizza, olives, grilled bread, salads, a glass of wine and orange drinks">
+      <figcaption><span data-lang="lv">Viesu pasūtītie ēdieni terasē. Foto: Marina Zemskova</span><span data-lang="en" hidden>What guests ordered, on the terrace. Photo: Marina Zemskova</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="night place" id="vieta">
+  <div class="duo">
+    <figure class="vault">
+      <img src="img/vault.jpg" width="1080" height="1350" loading="lazy" alt="Zāle ar gaišām ķieģeļu velvēm, melniem galdiem, pītiem krēsliem un tumši ziliem aizkariem" data-alt-en="The room: pale brick vaults, black tables, cane chairs and dark blue curtains">
+      <figcaption><span data-lang="lv">Foto: Daiga</span><span data-lang="en" hidden>Photo: Daiga</span></figcaption>
+    </figure>
+    <div class="wrap t1">
+      <p class="eyebrow"><span data-lang="lv">Zāle</span><span data-lang="en" hidden>The room</span></p>
+      <h2><span data-lang="lv">Gaišas velves, tumši zili aizkari</span><span data-lang="en" hidden>Pale vaults, dark blue curtains</span></h2>
+      <p class="lead"><span data-lang="lv">Melni galdi un pīti krēsli. Uz galdiem jau gaida šķīvji ar zilo rakstu.</span><span data-lang="en" hidden>Black tables and cane chairs. The plates with the blue pattern are already on the tables.</span></p>
+      <blockquote><span data-lang="lv">„Voglio Bene, kas atrodas Rīgas jūgendstila rajonā, ir dzīvīgs itāļu stila restorāns…”</span><span data-lang="en" hidden>“Voglio Bene, in Riga’s Art Nouveau district, is a lively Italian-style restaurant…”</span><cite>LiveRiga<span data-lang="en" hidden> (translated)</span></cite></blockquote>
+    </div>
+  </div>
+  <div class="shop" id="veikals">
+    <div class="duo">
+      <figure>
+        <img src="img/shop.jpg" width="1000" height="1250" loading="lazy" alt="Vīna pudeles ķieģeļu nišās; cenas uzrakstītas uz pudelēm" data-alt-en="Wine bottles in brick niches; the prices are written on the bottles">
+        <figcaption><span data-lang="lv">Foto: Sanita Vuskalne</span><span data-lang="en" hidden>Photo: Sanita Vuskalne</span></figcaption>
+      </figure>
+      <div class="wrap t2">
+        <p class="eyebrow"><span data-lang="lv">Pie ieejas</span><span data-lang="en" hidden>By the entrance</span></p>
+        <h2><span data-lang="lv">Veikaliņš ar vīniem un sieriem</span><span data-lang="en" hidden>A small shop for wine and cheese</span></h2>
+        <p class="lead"><span data-lang="lv">Sieri, uzkodas, saldumi, īpaši sagatavoti dārzeņi — un vīni no mazām Itālijas vīna darītavām, kādus citur Latvijā nenopirkt. Cenas ar baltu krāsu uzrakstītas tieši uz pudelēm.</span><span data-lang="en" hidden>Cheeses, snacks, sweets, specially prepared vegetables — and wines from small Italian wineries that you won’t find elsewhere in Latvia. Prices are written in white straight on the bottles.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec revs" id="atsauksmes">
+  <div class="wrap">
+    <div class="rate">
+      <span class="num" data-num>4,9</span>
+      <span class="cap"><b>★★★★★</b><span data-lang="lv">no 5, 249 atsauksmes<br>Google kartēs, 19.09.2026.</span><span data-lang="en" hidden>out of 5, 249 reviews<br>on Google Maps, 19 September 2026</span></span>
+    </div>
+    <div class="quotes">
+      <blockquote>
+        <p><span data-lang="lv">„Brīnišķīga vieta klusajā centrā. Apkalpošana viena no labākajām kādu esmu pieredzējusi.”</span><span data-lang="en" hidden>“A wonderful place in the quiet centre. The service is among the best I have experienced.”</span></p>
+        <cite>Elina Kaska, Google<span data-lang="en" hidden> (translated)</span></cite>
+      </blockquote>
+      <blockquote>
+        <p><span data-lang="lv">„Fantastiska vieta, kur iegriezties uz gardu maltīti! Viss bija ļoti gards. … Viesmīlis viennozīmīgi savā vietā.”</span><span data-lang="en" hidden>“A fantastic place to drop in for a delicious meal! Everything was very tasty. … The waiter is clearly in the right job.”</span></p>
+        <cite>Ieva Egle, Google<span data-lang="en" hidden> (translated)</span></cite>
+      </blockquote>
+      <blockquote>
+        <p><span data-lang="lv">„Lieliska vieta! Noteikti ne pēdējā vizīte. Paldies!”</span><span data-lang="en" hidden>“A great place! Definitely not the last visit. Thank you!”</span></p>
+        <cite>Anda Step, Google<span data-lang="en" hidden> (translated)</span></cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="sec tint book" id="rezervet">
+  <div class="wrap">
+    <div>
+      <h2><span data-lang="lv">Rezervēt galdiņu</span><span data-lang="en" hidden>Book a table</span></h2>
+      <p class="lead"><span data-lang="lv">Izvēlieties dienu, laiku un viesu skaitu — lapa sagatavos īsziņu restorānam, jums atliks tikai to nosūtīt. Vai vienkārši piezvaniet.</span><span data-lang="en" hidden>Pick a day, a time and the number of guests — the page drafts a text message to the restaurant, and all you do is send it. Or simply call.</span></p>
+      <p class="small" style="margin-top:14px"><span data-lang="lv">Atvērts: pirmdiena–sestdiena 12:00–23:00, svētdiena 12:00–22:00.</span><span data-lang="en" hidden>Open Monday–Saturday 12:00–23:00, Sunday 12:00–22:00.</span></p>
+    </div>
+    <div class="form">
+      <div class="row3">
+        <div><label for="f-day"><span data-lang="lv">Diena</span><span data-lang="en" hidden>Day</span></label><select id="f-day"></select></div>
+        <div><label for="f-time"><span data-lang="lv">Laiks</span><span data-lang="en" hidden>Time</span></label><select id="f-time"></select></div>
+        <div><label for="f-n"><span data-lang="lv">Personas</span><span data-lang="en" hidden>Guests</span></label><select id="f-n"></select></div>
+      </div>
+      <div><label for="f-name"><span data-lang="lv">Jūsu vārds</span><span data-lang="en" hidden>Your name</span></label><input type="text" id="f-name" autocomplete="given-name" maxlength="40"></div>
+      <div><label for="f-note"><span data-lang="lv">Vēlmes (ja ir)</span><span data-lang="en" hidden>Requests (optional)</span></label><input type="text" id="f-note" maxlength="120"></div>
+      <div class="msg">
+        <p class="small"><span data-lang="lv">Īsziņa restorānam</span><span data-lang="en" hidden>Text message to the restaurant</span></p>
+        <p id="msg">Labdien! Vēlos rezervēt galdiņu Voglio Bene.</p>
+      </div>
+      <div class="send">
+        <a class="btn" id="sms" href="sms:+37128239603"><span data-lang="lv">Sūtīt īsziņu</span><span data-lang="en" hidden>Send the text</span></a>
+        <a class="btn ghost" href="tel:+37128239603"><span data-lang="lv">Zvanīt 28 239 603</span><span data-lang="en" hidden>Call 28 239 603</span></a>
+        <button type="button" class="copy" id="copy"><span data-lang="lv">Kopēt īsziņas tekstu</span><span data-lang="en" hidden>Copy the message text</span></button>
+      </div>
+      <p class="small"><span data-lang="lv">Īsziņa aiziet no jūsu tālruņa uz restorāna numuru 28 239 603; šī lapa jūsu ziņu nekur nesūta un neglabā. Galdiņš ir rezervēts, kad restorāns to apstiprina.</span><span data-lang="en" hidden>The text goes from your phone to the restaurant’s number, 28 239 603; this page does not send or store your message. The table is yours once the restaurant confirms.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="sec visit" id="atrast">
+  <div class="wrap">
+    <figure>
+      <img src="img/facade.jpg" width="1000" height="1123" loading="lazy" alt="Ieeja Jura Alunāna ielā 2: izkārtne Voglio Bene, nojume un galdiņš ar rūtainu galdautu" data-alt-en="The entrance at Jura Alunāna iela 2: the Voglio Bene sign, a canopy and a table with a checked tablecloth">
+      <figcaption><span data-lang="lv">Ieeja zem nojumes, izkārtne virs durvīm. Foto: Sanita Vuskalne</span><span data-lang="en" hidden>The entrance under the canopy, the sign above the door. Photo: Sanita Vuskalne</span></figcaption>
+    </figure>
+    <div class="info">
+      <p class="eyebrow"><span data-lang="lv">Kā atrast</span><span data-lang="en" hidden>Find us</span></p>
+      <h2>Jura Alunāna iela 2</h2>
+      <p class="lead"><span data-lang="lv">Rīgas klusajā centrā, jūgendstila rajonā. Pie ieejas ir arī galdiņi ārā.</span><span data-lang="en" hidden>In Riga’s quiet centre, in the Art Nouveau district. There are tables outside by the entrance, too.</span></p>
+      <div class="hours" id="hours">
+        <div data-days="1,2,3,4,5,6"><span><span data-lang="lv">Pirmdiena – sestdiena</span><span data-lang="en" hidden>Monday – Saturday</span></span><span>12:00–23:00</span></div>
+        <div data-days="0"><span><span data-lang="lv">Svētdiena</span><span data-lang="en" hidden>Sunday</span></span><span>12:00–22:00</span></div>
+      </div>
+      <p class="status"><span><i class="dot" data-dot></i><span data-status>Katru dienu no 12:00</span></span></p>
+      <div class="links">
+        <a class="btn" href="https://maps.google.com/?cid=10175226472627365745" target="_blank" rel="noopener"><span data-lang="lv">Atvērt kartē</span><span data-lang="en" hidden>Open in Maps</span> <span class="arrow">↗</span></a>
+        <a class="btn ghost" href="tel:+37128239603">28 239 603</a>
+      </div>
+      <p class="more"><a href="https://www.facebook.com/vogliobeneriga/" target="_blank" rel="noopener">Facebook ↗</a><a href="https://wolt.com/en/lva/riga/restaurant/voglio-bene" target="_blank" rel="noopener"><span data-lang="lv">Piegāde: Wolt ↗</span><span data-lang="en" hidden>Delivery: Wolt ↗</span></a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="night foot">
+  <div class="wrap">
+    <span class="logo" role="img" aria-label="Voglio Bene Osteria"></span>
+    <p class="signline">Restorāns, osteria, bar aperitivo</p>
+    <p><span data-lang="lv">Šī lapa ir dizaina priekšlikums, ko sagatavojis Nikita. Tā nav Voglio Bene oficiālā mājaslapa, un restorāns to nav pasūtījis.</span><span data-lang="en" hidden>This page is a design proposal prepared by Nikita. It is not the official Voglio Bene website and was not commissioned by the restaurant.</span></p>
+    <p><span data-lang="lv">Fotogrāfijas — viesu, no Google kartēm: Alexander K (pica), Jelena Sencenkova (garneles), Nette Mat (deserti), Elena Misharina (branzino), Marina Zemskova (galds terasē), Daiga (zāle), Sanita Vuskalne (veikaliņš, ieeja). Logotips un acs zīme — no restorāna drukātās ēdienkartes.</span><span data-lang="en" hidden>Photographs are by guests, from Google Maps: Alexander K (pizza), Jelena Sencenkova (prawns), Nette Mat (desserts), Elena Misharina (branzino), Marina Zemskova (terrace table), Daiga (the room), Sanita Vuskalne (shop, entrance). The logo and the eye mark are taken from the restaurant’s printed menu.</span></p>
+    <p><span data-lang="lv">Fakti: Google kartes (19.09.2026.), santa.lv (29.04.2026. — virtuve, picas un pastas, aperitivo stundas, veikaliņš), karap.lv (21.11.2025.), LiveRiga, Wolt. Cenas — no viesa nofotografētas ēdienkartes; tās var būt mainījušās.</span><span data-lang="en" hidden>Facts: Google Maps (19 September 2026), santa.lv (29 April 2026 — the kitchen, pizza and pasta, aperitivo hours, the shop), karap.lv (21 November 2025), LiveRiga, Wolt. Prices come from a menu photographed by a guest and may have changed. Quotes are translated from Latvian.</span></p>
+    <svg aria-hidden="true"><use href="#eye"/></svg>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var LANGS = ['lv','en'], lang = 'lv', PHONE = '+37128239603';
+  var $ = function(s, r){ return (r || document).querySelector(s); };
+  var $$ = function(s, r){ return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+
+  /* ---- Riga clock ---- */
+  function riga(){
+    var o = {};
+    try {
+      new Intl.DateTimeFormat('en-GB', {timeZone:'Europe/Riga', year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', hour12:false})
+        .formatToParts(new Date()).forEach(function(p){ o[p.type] = p.value; });
+    } catch(e) {
+      var d = new Date(); o = {year:d.getFullYear(), month:d.getMonth()+1, day:d.getDate(), hour:d.getHours(), minute:d.getMinutes()};
+    }
+    var y = +o.year, m = +o.month, d2 = +o.day, h = +o.hour % 24, mi = +o.minute;
+    return {y:y, m:m, d:d2, min:h*60+mi, wd:new Date(Date.UTC(y, m-1, d2)).getUTCDay()};
+  }
+  function closeAt(wd){ return wd === 0 ? 22*60 : 23*60; }
+  var OPEN = 12*60;
+  function hm(t){ return ('0' + Math.floor(t/60)).slice(-2) + ':' + ('0' + t%60).slice(-2); }
+
+  var T = {
+    lv:{open:'Šobrīd atvērts līdz ', soon:'Šobrīd slēgts, atveras ', tom:'Šobrīd slēgts, atveras rīt ',
+        today:'šodien', tomorrow:'rīt', wd:['svētdien','pirmdien','otrdien','trešdien','ceturtdien','piektdien','sestdien'],
+        wdS:['Sv','Pr','Ot','Tr','Ce','Pk','Se'],
+        copied:'Nokopēts', copy:'Kopēt īsziņas tekstu'},
+    en:{open:'Open now until ', soon:'Closed now, opens at ', tom:'Closed now, opens tomorrow at ',
+        today:'today', tomorrow:'tomorrow', wd:['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+        wdS:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
+        copied:'Copied', copy:'Copy the message text'}
+  };
+
+  function renderStatus(){
+    var n = riga(), t = T[lang], txt, isOpen = n.min >= OPEN && n.min < closeAt(n.wd);
+    if (isOpen) txt = t.open + hm(closeAt(n.wd));
+    else if (n.min < OPEN) txt = t.soon + '12:00';
+    else txt = t.tom + '12:00';
+    $$('[data-status]').forEach(function(el){ el.textContent = txt; });
+    $$('[data-dot]').forEach(function(el){ el.className = 'dot' + (isOpen ? '' : ' shut'); });
+    $$('#hours div').forEach(function(el){
+      el.className = el.getAttribute('data-days').split(',').indexOf(String(n.wd)) >= 0 ? 'today' : '';
+    });
+  }
+
+  /* ---- booking ---- */
+  var fDay = $('#f-day'), fTime = $('#f-time'), fN = $('#f-n'), fName = $('#f-name'), fNote = $('#f-note');
+  var days = [], MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  function endDot(t){ return /[.!?…]$/.test(t) ? t : t + '.'; }
+  function cap(s){ return s.charAt(0).toUpperCase() + s.slice(1); }
+  function buildDays(){
+    var n = riga(), keep = fDay.value; days = [];
+    for (var i = 0; i < 14; i++){
+      var dt = new Date(Date.UTC(n.y, n.m-1, n.d + i)), wd = dt.getUTCDay();
+      var last = closeAt(wd) - 60, first = OPEN;
+      if (i === 0) { first = Math.max(OPEN, Math.ceil((n.min + 30) / 30) * 30); if (first > last) continue; }
+      var dm = ('0' + dt.getUTCDate()).slice(-2) + '.' + ('0' + (dt.getUTCMonth()+1)).slice(-2) + '.';
+      days.push({i:i, wd:wd, dm:dm, en:dt.getUTCDate() + ' ' + MON[dt.getUTCMonth()], first:first, last:last});
+    }
+    fDay.innerHTML = '';
+    days.forEach(function(d, k){
+      var o = document.createElement('option'); o.value = String(d.i);
+      o.textContent = (d.i > 1 ? T[lang].wdS[d.wd] : cap(dayWord(d))) + ', ' + dmOf(d); fDay.appendChild(o);   /* short weekday in the list, the full word goes into the message */
+    });
+    if (keep && days.some(function(d){ return String(d.i) === keep; })) fDay.value = keep;
+  }
+  function dmOf(d){ return lang === 'lv' ? d.dm : d.en; }
+  function dayWord(d){ var t = T[lang]; return d.i === 0 ? t.today : d.i === 1 ? t.tomorrow : t.wd[d.wd]; }
+  function curDay(){ for (var k = 0; k < days.length; k++) if (String(days[k].i) === fDay.value) return days[k]; return days[0]; }
+  function buildTimes(){
+    var d = curDay(), keep = fTime.value || '19:00', has = false; fTime.innerHTML = '';
+    for (var t = d.first; t <= d.last; t += 30){
+      var o = document.createElement('option'); o.value = o.textContent = hm(t); fTime.appendChild(o);
+      if (o.value === keep) has = true;
+    }
+    if (has) fTime.value = keep;
+  }
+  function buildN(){
+    for (var i = 1; i <= 12; i++){ var o = document.createElement('option'); o.value = o.textContent = String(i); fN.appendChild(o); }
+    fN.value = '2';
+  }
+  function message(){
+    var d = curDay(), n = +fN.value, name = fName.value.trim(), note = fNote.value.trim(), s;
+    if (lang === 'lv'){
+      s = 'Labdien! Vēlos rezervēt galdiņu Voglio Bene: ' + dayWord(d) + ', ' + d.dm + ', plkst. ' + fTime.value + ', ' + n + (n === 1 ? ' personai' : ' personām') + '.';
+      if (note) s += ' Vēlmes: ' + endDot(note);
+      if (name) s += ' Vārds: ' + name + '.';
+      s += ' Paldies!';
+    } else {
+      s = 'Hello! I would like to book a table at Voglio Bene: ' + dayWord(d) + ', ' + dmOf(d) + ', at ' + fTime.value + ', for ' + n + (n === 1 ? ' person' : ' people') + '.';
+      if (note) s += ' Request: ' + endDot(note);
+      if (name) s += ' Name: ' + name + '.';
+      s += ' Thank you!';
+    }
+    return s;
+  }
+  function renderMsg(){
+    var s = message(); $('#msg').textContent = s;
+    var ios = /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent);
+    $('#sms').href = 'sms:' + PHONE + (ios ? '&' : '?') + 'body=' + encodeURIComponent(s);
+  }
+  function renderBooking(){ buildDays(); buildTimes(); renderMsg(); }
+
+  fDay.addEventListener('change', function(){ buildTimes(); renderMsg(); });
+  [fTime, fN].forEach(function(el){ el.addEventListener('change', renderMsg); });
+  [fName, fNote].forEach(function(el){ el.addEventListener('input', renderMsg); });
+  $('#copy').addEventListener('click', function(){
+    var s = message(), b = this, done = function(){
+      b.textContent = T[lang].copied; setTimeout(function(){ setLang(lang); }, 1600);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(s).then(done, function(){});
+    else { var ta = document.createElement('textarea'); ta.value = s; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); done(); } catch(e){} document.body.removeChild(ta); }
+  });
+
+  /* ---- menu tabs (phone) ---- */
+  var cats = $('#cats'); cats.className += ' js';
+  $$('#tabs button').forEach(function(b){
+    b.addEventListener('click', function(){
+      $$('#tabs button').forEach(function(x){ x.setAttribute('aria-selected', x === b ? 'true' : 'false'); });
+      $$('.cat', cats).forEach(function(c){ c.className = 'cat' + (c.getAttribute('data-cat') === b.getAttribute('data-tab') ? ' on' : ''); });
+    });
+  });
+
+  /* ---- language ---- */
+  /* numbers and prices are written once, the Latvian way; English gets a decimal point and the sign in front */
+  var NUMS = $$('.cat .p, [data-num]').map(function(el){ return {el:el, lv:el.textContent}; });
+  var ALTS = $$('img[data-alt-en]').map(function(el){ return {el:el, lv:el.alt, en:el.getAttribute('data-alt-en')}; });
+  function renderNums(){
+    NUMS.forEach(function(o){
+      var t = o.lv;
+      if (lang === 'en') { t = t.replace(',', '.'); if (/€/.test(t)) t = '€' + t.replace(/\s*€/, ''); }
+      o.el.textContent = t;
+    });
+    ALTS.forEach(function(o){ o.el.alt = lang === 'en' ? o.en : o.lv; });
+    $('.nav').setAttribute('aria-label', lang === 'en' ? 'Sections' : 'Sadaļas');
+  }
+  function setLang(l){
+    if (LANGS.indexOf(l) < 0) l = 'lv';
+    lang = l; document.documentElement.lang = l;
+    $$('[data-lang]').forEach(function(el){ el.hidden = el.getAttribute('data-lang') !== l; });
+    $$('[data-setlang]').forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-setlang') === l ? 'true' : 'false'); });
+    var c = $('#copy'); c.innerHTML = '<span data-lang="lv"' + (l === 'lv' ? '' : ' hidden') + '>' + T.lv.copy + '</span><span data-lang="en"' + (l === 'en' ? '' : ' hidden') + '>' + T.en.copy + '</span>';
+    try { localStorage.setItem('vb-lang', l); } catch(e){}
+    renderNums(); renderStatus(); renderBooking();
+  }
+  $$('[data-setlang]').forEach(function(b){ b.addEventListener('click', function(){ setLang(b.getAttribute('data-setlang')); }); });
+
+  buildN();
+  var start = 'lv';
+  try { start = localStorage.getItem('vb-lang') || 'lv'; } catch(e){}
+  var q = /[?&]lang=([a-z]{2})/.exec(location.search); if (q) start = q[1];
+  setLang(start);
+  setInterval(renderStatus, 60000);
+
+  /* ---- header: show the button once the hero buttons are gone ---- */
+  var head = $('#head'), cta = $('#cta');
+  function onScroll(){ head.className = 'head' + (cta.getBoundingClientRect().bottom < 60 ? ' stuck' : ''); }
+  addEventListener('scroll', onScroll, {passive:true}); addEventListener('resize', onScroll); onScroll();
+})();
+</script>
+</body>
+</html>
